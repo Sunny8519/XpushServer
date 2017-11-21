@@ -20,7 +20,7 @@ public class MinaServer {
             //第二步
             acceptor.setHandler(new MessageManageHandler());
             //第三步
-            acceptor.getFilterChain().addLast("codec", new ProtocolCodecFilter(new TextLineCodecFactory()));
+            acceptor.getFilterChain().addLast("codec", new ProtocolCodecFilter(new CustomTextLineFactory()));
 
             //设置
             acceptor.getSessionConfig().setIdleTime(IdleStatus.BOTH_IDLE, 5);
