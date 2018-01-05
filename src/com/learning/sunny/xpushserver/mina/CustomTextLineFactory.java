@@ -6,7 +6,11 @@ import org.apache.mina.filter.codec.ProtocolDecoder;
 import org.apache.mina.filter.codec.ProtocolEncoder;
 
 /**
- * Created by Sunny on 2017/11/21.
+ * <pre>
+ * author : Sunny
+ * time : 2017/11/17
+ * desc :
+ * </pre>
  */
 public class CustomTextLineFactory implements ProtocolCodecFactory {
     private final TextLineDecoder decoder;
